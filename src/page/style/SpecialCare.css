@@ -1,0 +1,183 @@
+/* SpecialCare.css */
+.special-care-container {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 25px;
+  font-family: "Tahoma", sans-serif;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.special-care-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+
+.section {
+  padding: 18px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  border-left: 5px solid #1976d2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.section legend {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 0 10px;
+  color: #444;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="datetime-local"],
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #1976d2;
+  outline: none;
+  box-shadow: 0 0 5px rgba(25, 118, 210, 0.3);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* ปุ่มเพิ่มและยกเลิก */
+.submit-btn,
+.cancel-btn {
+  display: inline-block;
+  width: 48%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.submit-btn {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+}
+
+.submit-btn:hover {
+  background-color: #1565c0;
+}
+
+.cancel-btn {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+}
+
+.cancel-btn:hover {
+  background-color: #c9302c;
+}
+
+/* รายการดูแลพิเศษ */
+.special-care-list {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.special-care-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.special-care-list li {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  border-left: 5px solid #1976d2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.special-care-list li:hover {
+  transform: scale(1.02);
+}
+
+/* ปุ่มแก้ไข / ลบ */
+.special-care-list button {
+  margin-right: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.special-care-list button:first-child {
+  background-color: #f39c12;
+  color: white;
+}
+
+.special-care-list button:first-child:hover {
+  background-color: #e67e22;
+}
+
+.special-care-list button:last-child {
+  background-color: #d9534f;
+  color: white;
+}
+
+.special-care-list button:last-child:hover {
+  background-color: #c9302c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .special-care-container {
+    padding: 15px;
+  }
+
+  .submit-btn,
+  .cancel-btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

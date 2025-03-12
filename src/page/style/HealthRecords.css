@@ -1,0 +1,50 @@
+.sidebar1 {
+  width: 180px; /* 🔹 ลดความกว้างลง */
+  padding: 10px; /* 🔹 ลด padding */
+  background: #3498db;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-record-btn {
+  padding: 8px 12px; /* 🔹 ลดขนาดปุ่ม */
+  font-size: 14px; /* 🔹 ลดขนาดตัวอักษร */
+}
+
+.sidebar1 ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.sidebar1 ul li {
+  padding: 8px;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.sidebar1 ul li:hover {
+  background: #2980b9;
+}
+
+@media (max-width: 768px) {
+  .sidebar1 {
+    width: 140px; /* 📱 ลดขนาดลงอีกในมือถือ */
+    padding: 8px;
+  }
+
+  .sidebar1 ul li {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .add-record-btn {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}

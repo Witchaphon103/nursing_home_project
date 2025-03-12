@@ -1,0 +1,143 @@
+.schedule-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-calendar-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Form styling */
+.schedule-form {
+  flex: 1 1 400px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.schedule-form .form-group {
+  margin-bottom: 15px;
+}
+
+.schedule-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.schedule-form input[type="text"],
+.schedule-form input[type="datetime-local"],
+.schedule-form select,
+.schedule-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.schedule-form textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-btn:disabled {
+  background-color: #90caf9;
+}
+
+/* Calendar section styling */
+.calendar-section {
+  flex: 1 1 300px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.tile-badge {
+  background: #ffeb3b;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 5px auto;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* Schedule list styling */
+.schedule-list {
+  margin-top: 30px;
+}
+
+.schedule-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.calendar-date {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.event-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.react-calendar {
+  width: 100%;
+  max-width: 400px; /* หรือขนาดที่เหมาะสม */
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.react-calendar__tile {
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  color: black !important;  /* แก้ปัญหาสีขาว */
+  background: white;  /* ป้องกันสีพื้นหลังผิดพลาด */
+}
+
+.react-calendar__tile--now {
+  background: #ffeb3b !important;
+  color: black !important;
+  font-weight: bold;
+}
+
+.react-calendar__tile--active {
+  background: #2196f3 !important;
+  color: white !important;
+  font-weight: bold;
+}
+
+.calendar-dot {
+  width: 8px;
+  height: 8px;
+  
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 2px;
+}

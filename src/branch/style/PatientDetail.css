@@ -1,0 +1,201 @@
+/* คอนเทนเนอร์หลักของหน้าผู้ป่วย */
+.patient-page {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 25px;
+  background: linear-gradient(135deg, #f9f9f9, #e3e6e8);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  font-family: 'Prompt', sans-serif;
+}
+
+/* หัวข้อใหญ่ */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* กล่องข้อมูลผู้ป่วย */
+.patient-details {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
+}
+
+.patient-details:hover {
+  transform: scale(1.02);
+}
+
+/* ชื่อผู้ป่วย */
+h2 {
+  font-size: 24px;
+  color: #3498db;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* ข้อมูลทั่วไป */
+p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin: 10px 0;
+  position: relative;
+  padding-left: 20px;
+}
+
+/* ✅ ตั้งค่าสไตล์พื้นฐานของหน้า */
+.patient-page {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px;
+  background: linear-gradient(135deg, #f9f9f9, #e3e6e8);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  font-family: 'Prompt', sans-serif;
+}
+
+/* ✅ หัวข้อหลัก */
+.patient-page h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* ✅ การ์ดข้อมูลผู้ป่วย */
+.patient-card {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.patient-card:hover {
+  transform: scale(1.02);
+}
+
+/* ✅ ส่วนของรูปภาพ */
+.patient-photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.patient-photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3498db;
+}
+
+/* ✅ ข้อมูลของผู้ป่วย */
+.patient-info {
+  flex: 2;
+  padding-left: 20px;
+}
+
+.patient-info h2 {
+  background: linear-gradient(90deg, #3498db, #6dd5fa);
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.patient-info p {
+  font-size: 16px;
+  color: #333;
+  margin: 8px 0;
+  padding-left: 10px;
+  position: relative;
+  line-height: 1.5;
+}
+
+
+/* ✅ ปุ่มกลับ */
+.back-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 20px;
+  font-size: 16px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.back-btn:hover {
+  background: #217dbb;
+}
+
+/* ✅ ทำให้หน้าเว็บดูดีขึ้นบนมือถือ */
+@media (max-width: 768px) {
+  .patient-page {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .patient-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .patient-photo img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .patient-info {
+    padding-left: 0;
+  }
+
+  .patient-info h2 {
+    font-size: 18px;
+  }
+
+  .patient-info p {
+    font-size: 14px;
+  }
+}
+
+
+/* ทำให้หน้าเว็บดูดีขึ้นบนมือถือ */
+@media (max-width: 768px) {
+  .patient-page {
+    width: 95%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,153 @@
+/* รีเซ็ตค่าพื้นฐานของ body และ html */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* จัดให้เนื้อหาอยู่กลางหน้าจอ */
+    align-items: center;
+    background-color: #f4f4f4; /* พื้นหลังสีเทาอ่อน */
+  }
+  
+  /* ทำให้ container อยู่กลางหน้าจอ */
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px; /* จำกัดความกว้างของกล่อง */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* ตั้งค่า input และปุ่มให้สวยงาม */
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  /* ElderlyInfo.css */
+
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f7fc;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  padding: 20px;
+  color: white;
+  min-height: 100vh;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #34495e;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.sidebar li:hover {
+  background-color: #1abc9c;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  color: #2c3e50;
+}
+
+.elderly-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.elderly-form input {
+  padding: 10px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+}
+
+.elderly-form button {
+  padding: 10px;
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.elderly-form button:hover {
+  background-color: #16a085;
+}
+
+.elderly-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.elderly-table th, .elderly-table td {
+  border: 1px solid #bdc3c7;
+  padding: 10px;
+  text-align: left;
+}
+
+.elderly-table th {
+  background-color: #34495e;
+  color: white;
+}
+
+.elderly-table tr:nth-child(even) {
+  background-color: #ecf0f1;
+}
+
+.elderly-table tr:hover {
+  background-color: #d5dbdb;
+}
+
+/* 📌 ตั้งค่าพื้นหลังของโปรไฟล์ */

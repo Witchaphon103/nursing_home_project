@@ -1,0 +1,90 @@
+.layout-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .layout {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 250px;
+  }
+  
+  .content {
+    flex-grow: 1; /* ✅ ให้พื้นที่แสดง Dashboard */
+    padding: 20px;
+    display: block; /* ✅ ต้องไม่เป็น display: none; */
+  }
+  .layout {
+  display: flex;
+  flex-direction: column; /* ✅ ให้ Header อยู่ด้านบน */
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  padding: 10px;
+  min-height: 100vh;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.header {
+  width: 100%;
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.layout {
+  display: flex;
+  flex-direction: column; /* ✅ ให้ Header อยู่ด้านบน */
+  height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  padding: 10px;
+  min-height: 100vh;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.header {
+  width: 100%;
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}

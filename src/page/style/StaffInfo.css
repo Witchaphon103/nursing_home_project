@@ -1,0 +1,117 @@
+/* 📌 คอนเทนเนอร์หลัก */
+.staff-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* 📌 Grid ของรายชื่อพนักงาน */
+.staff-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* 📌 Card ของแต่ละพนักงาน */
+.staff-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.staff-card:hover {
+  transform: scale(1.03);
+}
+
+/* 📌 รูปโปรไฟล์ */
+.staff-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* 📌 คอนเทนเนอร์หลักของรายละเอียดพนักงาน */
+.staff-details {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  max-width: 450px;
+  margin: 20px auto;
+  font-family: 'Arial', sans-serif;
+}
+
+/* 📌 หัวข้อ */
+.staff-details h3 {
+  font-size: 22px;
+  color: #d9534f;
+  margin-bottom: 15px;
+}
+
+/* 📌 รูปโปรไฟล์ */
+.staff-details img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid #ddd;
+}
+
+/* 📌 ข้อมูลแต่ละรายการ */
+.staff-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 8px;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+/* 📌 ไอคอน */
+.staff-info i {
+  font-size: 18px;
+  color: #007bff;
+}
+
+/* 📌 ปุ่มปิด */
+.close-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+
+.close-btn:hover {
+  background-color: #c9302c;
+}
+
+
+/* 📌 Responsive Design */
+@media (max-width: 768px) {
+  .staff-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
